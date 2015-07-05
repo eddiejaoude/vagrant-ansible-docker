@@ -1,0 +1,7 @@
+- name: mysql container
+  docker:
+    name: mysql
+    image: mysql
+    state: started
+    ports:
+      - "3306:3306"
