@@ -6,7 +6,7 @@ server:
     locale: en_US.UTF-8
 vagrant_local:
     install: '1'
-    vm: { base_box: trusty64, hostname: default, ip: 192.168.33.99, memory: '512', sharedfolder: ./, enableWindows: '1', useVagrantCloud: '1', syncType: nfs }
+    vm: { base_box: trusty64, hostname: default, ip: 192.168.33.99, memory: '2048', sharedfolder: ./, enableWindows: '1', useVagrantCloud: '1', syncType: nfs }
 nginx:
     install: '1'
     docroot: /vagrant
@@ -17,7 +17,7 @@ apache:
     servername: myApp.vb
 mysql:
     install: '1'
-    root_password: '123'
+    root_password: password
     database: db
     user: user
     password: password
@@ -30,5 +30,5 @@ xdebug:
     install: '1'
 blackfire:
     install: '1'
-    server_id: xxx
-    server_token: xxx
+    server_id: XXX
+    server_token: XXX
