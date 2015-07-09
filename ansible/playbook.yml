@@ -11,7 +11,8 @@
     - mysql
     - php
     - xdebug
-    #- xhprof
+    #- xhprof # http://www.lornajane.net/posts/2013/installing-xhgui
     - docker
     - blackfire
+    - npm
     - app
