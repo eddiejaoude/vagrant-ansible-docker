@@ -3,5 +3,6 @@
     name: mysql
     image: mysql
     state: started
+    env: "MYSQL_ROOT_PASSWORD={{ mysql.root_password }}"
     ports:
       - "3306:3306"
