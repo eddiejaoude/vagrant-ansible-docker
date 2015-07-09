@@ -18,6 +18,7 @@
     - 127.0.0.1
     - ::1
     - localhost
+    - 192.168.33.1
 
 - name: mysql | Create databases
   mysql_db: name={{ mysql.database }} state=present login_user=root login_password={{ mysql.root_password }}
@@ -33,4 +34,10 @@
     - "{{ current_hostname.stdout | lower }}"
 
 - name: mysql | Create users
-  mysql_user: name={{ mysql.user }} password={{ mysql.password }} priv={{ mysql.database }}.*:ALL state=present login_user=root login_password={{ mysql.root_password }}
+  mysql_user: name={{ mysql.user }} password={{ mysql.password }} priv=*.*:ALL state=present login_user=root login_password={{ mysql.root_password }}
+
+- name: do not bind to localhost
+  lineinfile: dest=/etc/mysql/my.cnf
+              regexp='bind-address'
+              line='bind-address = 0.0.0.0'
+  notify: restart mysql
