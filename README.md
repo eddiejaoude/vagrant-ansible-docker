@@ -39,15 +39,4 @@ Edit `ansible/roles/docker/tasks/main.yml` and add includes for extra containers
 
 ---
 
-### Blackfire
-
-animated screen shot of how to use (gif)
-
----
-
-### Step through
-
-
----
-
 [Blog post](http://blog.dashboardhub.io/2015/07/10/phansible-vagrant-docker-npm/)
