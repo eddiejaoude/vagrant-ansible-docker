@@ -50,4 +50,4 @@ animated screen shot of how to use (gif)
 
 ---
 
-[Blog post(http://blog.dashboardhub.io/2015/07/10/phansible-vagrant-docker-npm/)
+[Blog post](http://blog.dashboardhub.io/2015/07/10/phansible-vagrant-docker-npm/)
