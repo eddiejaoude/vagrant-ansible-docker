@@ -11,8 +11,11 @@ Vagrant with Ansible, Docker, Blackfire, Xdebug
 ## Usage
 
 1. Clone repo and add to root of your project
-2. Vagrant up (use ``--debug` for more verbose output from **vagrant**)
-3. Access on `http://192.168.33.99/`
+2. Vagrant up (use `--debug` for more verbose output from **vagrant**)
+3. Access **web** on `http://192.168.33.99/`
+4. Access **mysql** on `192.168.33.99:3306`
+5. 4. Access **elasticsearch** on `192.168.33.99:9200`
+6. etc...
 
 ---
 
@@ -23,6 +26,7 @@ Vagrant with Ansible, Docker, Blackfire, Xdebug
 
 Edit `ansible/vars/all.yml` and add to collect on line 4, looks like `packages: [vim, htop, iotop]`
 
+*Or variables, mysql passwords etc*
 
 ### What **ansible** installs (eg. nginx or apache)
 
@@ -32,3 +36,13 @@ Edit `ansible/playbook.yml` *comment/uncomment* **roles** collection.
 ### What **docker** containers are installed
 
 Edit `ansible/roles/docker/tasks/main.yml` and add includes for extra containers.
+
+---
+
+### Blackfire
+
+animated screen shot of how to use (gif)
+
+---
+
+### Step through
