@@ -2,6 +2,30 @@
 
 Vagrant with Ansible, Docker, Blackfire, Xdebug
 
+---
+
+## Contains
+
+* PHP
+* MySQL
+* Blackfire (profiling)
+* Apache or Nginx (recommended only 1 can be installed at a time)
+* Docker
+    * MySQL
+    * Elasticsearch
+    * Postgres
+    * Redis
+    * Selenium
+* Npm
+    * Bower
+    * Grunt
+    * Express
+    * Socket.io
+* Ruby
+    * Jekyll
+* xhprof (profiling)
+* Xdebug (debugging code)
+
 ## Dependencies
 
 * Vagrant
