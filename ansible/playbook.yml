@@ -15,4 +15,5 @@
     - docker
     - blackfire
     - npm
+    - ruby
     - app
