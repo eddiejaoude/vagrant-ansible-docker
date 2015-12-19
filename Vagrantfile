@@ -43,7 +43,6 @@ Vagrant.configure("2") do |config|
     # Ansible provisioning (you need to have ansible installed)
     #############################################################
 
-
     if which('ansible-playbook')
         config.vm.provision "ansible" do |ansible|
             ansible.playbook = "ansible/playbook.yml"
