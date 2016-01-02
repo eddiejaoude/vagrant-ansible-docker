@@ -8,7 +8,7 @@ Vagrant with Ansible, Docker, Blackfire, Xdebug
 
 * PHP
 * MySQL
-* Blackfire (profiling)
+* Blackfire (profiling) - not recommended to use with xdebug
 * Apache or Nginx (recommended only 1 can be installed at a time)
 * Docker
     * MySQL
