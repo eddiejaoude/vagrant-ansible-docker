@@ -24,7 +24,7 @@ Vagrant with Ansible, Docker, Blackfire, Xdebug
 * Ruby
     * Jekyll
 * xhprof (profiling)
-* Xdebug (debugging code)
+* Xdebug (debugging code) - not recommended to use with Blackfire
 
 ## Dependencies
 
